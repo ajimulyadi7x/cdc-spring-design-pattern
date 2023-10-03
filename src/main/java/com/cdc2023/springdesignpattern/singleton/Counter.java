@@ -8,7 +8,12 @@ public class Counter {
         return value;
     }
 
-    public void increment() {
+    /**
+     * handling race condition
+     * the method which changes the value
+     * should be use syncronize method
+     */
+    public synchronized void increment() {
         value++;
     }
 }
