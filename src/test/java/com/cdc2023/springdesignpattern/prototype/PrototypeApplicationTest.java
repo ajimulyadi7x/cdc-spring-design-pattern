@@ -17,16 +17,12 @@ class PrototypeApplicationTest {
     void testPrototypeApplication() {
         Employee employeeStaff = applicationContext.getBean("employeeStaff", Employee.class);
         employeeStaff.setName("Ryuki");
-        employeeStaff.setSalary(10000000L);
         Employee employeeManager = applicationContext.getBean("employeeManager", Employee.class);
         employeeManager.setName("Ryuga");
-        employeeManager.setSalary(20000000L);
         Employee employeeVicePresident = applicationContext.getBean("employeeVicePresident", Employee.class);
         employeeVicePresident.setName("Ita");
-        employeeVicePresident.setSalary(30000000L);
         Employee employeeCLevel = applicationContext.getBean("employeeCLevel", Employee.class);
         employeeCLevel.setName("Aji");
-        employeeCLevel.setSalary(40000000L);
 
         System.out.println(employeeStaff);
         System.out.println(employeeManager);
